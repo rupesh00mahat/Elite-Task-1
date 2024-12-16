@@ -7,12 +7,12 @@ import Discovery from "./components/Discovery";
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { ACTIONTYPE } from './store/store';
+import { ACTIONTYPE } from './utils/actiontype';
 
 function App() {
 const methods = useForm();
 
-const stepperValue = useSelector((store)=> store.stepperValue)
+const stepperValue = useSelector((state)=> state.stepperValue)
 const dispatch = useDispatch();
 
 
@@ -51,7 +51,7 @@ const dispatch = useDispatch();
     dispatch({type: ACTIONTYPE.CHANGE_STEPPER, payload: stepperValue+1})
   }
 
-  
+
   return (
     <div className="App">
       <Container>

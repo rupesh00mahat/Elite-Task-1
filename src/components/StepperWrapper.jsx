@@ -3,7 +3,7 @@ import React from 'react'
 import ContentPasteSearchIcon from '@mui/icons-material/ContentPasteSearch';
 import { GroupAddOutlined } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
-import { ACTIONTYPE } from '../store/store';
+import { ACTIONTYPE } from '../utils/actiontype';
 const steps = [
   'Discover',
   'Personal Info'

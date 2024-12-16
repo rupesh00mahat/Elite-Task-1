@@ -6,12 +6,12 @@ import AutoCompleteDropdown from './Input/AutoCompleteDropdown'
 import Options from "../datas/dropdown-option.json";
 import { Controller, useFormContext } from 'react-hook-form'
 import PropTypes from 'prop-types'
-import { useDispatch } from 'react-redux'
-import { submitDataOne } from '../store/store'
+import { connect, useDispatch } from 'react-redux'
+import { submitData } from '../api/submitdata'
+import { updateClientId } from '../actions/data-submit-request'
 
-function PersonalInfo({ next }) {
+function PersonalInfo({ next, response ={}, sendToUpdate }) {
 
-const dispatch = useDispatch();
 
   const [open, setOpen] = useState(false);
   const [manualCodeCountryState, setManualCodeCountryState] = useState('');
@@ -19,7 +19,7 @@ const dispatch = useDispatch();
   const { control, handleSubmit, watch, setValue, formState: { errors, isSubmitted } } = useFormContext();
   const onSubmit = (data) => {
     console.log(data);
-    dispatch(submitDataOne({addressLine1: data.addressLine1, addressLine2: data.addressLine2, cityCountryState: data.cityCountryState, zipCode: data.zipCode, programType: data.programType, serviceAgreementsLength: data.serviceAgreementsLength, lossProtectionPlan: data.lossProtectionPlan}));
+    sendToUpdate({addressLine1: data.addressLine1, addressLine2: data.addressLine2, cityCountryState: data.cityCountryState, zipCode: data.zipCode, programType: data.programType, serviceAgreementsLength: data.serviceAgreementsLength, lossProtectionPlan: data.lossProtectionPlan});
   }
 
   const handleClose = () => {
@@ -188,7 +188,17 @@ const dispatch = useDispatch();
 }
 
 PersonalInfo.prototype = {
-  next: PropTypes.func
+  next: PropTypes.func, 
+  response: PropTypes.object,
+  sendToUpdate: PropTypes.func,
 }
 
-export default PersonalInfo
+const mapStateToProps = (state) => ({
+  response: state.response
+})
+
+const mapDispatchToProps = (dispatch) => ({
+  sendToUpdate: (data) => dispatch(updateClientId(data))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(PersonalInfo);

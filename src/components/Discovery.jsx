@@ -7,15 +7,16 @@
   import PropTypes from 'prop-types';
   import { Controller, useFormContext } from 'react-hook-form';
   import convictionData from "../datas/convictionDropdown.json";
-import { useDispatch } from 'react-redux';
-import { ACTIONTYPE, submitDataOne } from '../store/store';
+import { connect } from 'react-redux';
+import {updateClientId} from '../actions/data-submit-request';
 
-  function Discovery({ formData, setFormData, next }) {
+  function Discovery({ formData, setFormData, next,response={},  sendToUpdate }) {
 
     const { control, handleSubmit, watch,setValue, formState: { errors, isSubmitted } } = useFormContext();
-    const dispatch = useDispatch();
 
-
+if(response !== ''){
+  console.log(response);
+}
     const watchBrand = watch('brand');
     const watchConvictionState = watch('convictionState');
     const watchEnrollmentCode = watch('enrollmentCode');
@@ -47,10 +48,11 @@ import { ACTIONTYPE, submitDataOne } from '../store/store';
 
 
     const onSubmit = (data) => {
+      
       next(data);
-      console.log(data);
-      dispatch(submitDataOne(data));
+      sendToUpdate(data);
     }
+
 
     return (
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -237,6 +239,17 @@ import { ACTIONTYPE, submitDataOne } from '../store/store';
     formData: PropTypes.array,
     setFormData: PropTypes.func,
     nextStep: PropTypes.func,
+    response: PropTypes.object,
+    updateClient: PropTypes.func,
   }
-  export default Discovery
+
+  const mapStateToProps = (state) => ({
+    response: state.response != '' ? state.response: {}
+  })
+
+  const mapDispatchToProps = (dispatch) => ({
+    sendToUpdate: (data) => dispatch(updateClientId(data))
+  })
+
+  export default connect(mapStateToProps, mapDispatchToProps)(Discovery)
 
