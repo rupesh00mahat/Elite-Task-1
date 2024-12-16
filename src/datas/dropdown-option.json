@@ -1,0 +1,45 @@
+[
+  { "label": "Select an option...", "id": 0, "placeholder": true,
+  "value": 0
+  },
+  {
+    "label": "One",
+    "id": 1,
+    "name": "One",
+    "description": "This is description one",
+    "value":  "One"
+
+  },
+  {
+    "label": "Two",
+    "id": 2,
+    "name": "Two",
+    "description": "This is description two",
+    "value": "Two"
+
+  },
+  {
+    "label": "Three",
+    "id": 3,
+    "name": "Three",
+    "description": "This is description three",
+    "value": "Three"
+
+  },
+  {
+    "label": "Four",
+    "id": 4,
+    "name": "Four",
+    "description": "This is description four",
+    "value": "Four"
+
+  },
+  {
+    "label": "Five",
+    "id": 5,
+    "name": "Five",
+    "description": "This is description five",
+    "value": "Five"
+
+  }
+]

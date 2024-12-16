@@ -1,0 +1,246 @@
+{
+    "convictionState": [
+        {
+            "id": 1,
+            "name": "State Name 1",
+            "label": "State Name 1",
+            "description": "Description 1",
+            "value": "state1"
+        },
+        {
+            "id": 2,
+            "name": "State Name 2",
+            "label": "State Name 2",
+            "description": "Description 2",
+            "value": "state2"
+        }
+    ],
+    "convictionCountry": {
+        "state1": [
+            {
+                "id": 1,
+                "name": "Country Name 1",
+                "label": "Country Name 1",
+                "description": "Description 1",
+                "value": "country1"
+            },
+            {
+                "id": 2,
+                "name": "Country Name 2",
+                "label": "Country Name 2",
+                "description": "Description 2",
+                "value": "country2"
+            }
+        ],
+        "state2": [
+            {
+                "id": 3,
+                "name": "Country Name 3",
+                "label": "Country Name 3",
+                "description": "Description 3",
+                "value": "country3"
+            },
+            {
+                "id": 4,
+                "label": "Country Name 4",
+                "name": "Country Name 4",
+                "description": "Description 4",
+                "value": "country4"
+            }
+        ]
+    },
+    "convictionCourt": {
+        "state1": [
+            {
+                "id": 1,
+                "name": "Court Name 1",
+                "label": "Court Name 1",
+                "description": "Description 1",
+                "value": "court1"
+            },
+            {
+                "id": 2,
+                "name": "Court Name 2",
+                "label": "Court Name 2",
+                "description": "Description 2",
+                "value": "court2"
+            }
+        ],
+        "state2": [
+            {
+                "id": 3,
+                "name": "Court Name 3",
+                "label": "Court Name 3",
+                "description": "Description 3",
+                "value": "court3"
+
+            },
+            {
+                "id": 4,
+                "name": "Court Name 4",
+                "label": "Court Name 4",
+                "description": "Description 4",
+                "value": "court4"
+            }
+        ]
+       
+    },
+    "enrollmentCode": {
+        "state1": [
+            {
+                "id": 1,
+                "name": "ECode1",
+                "label": "ECode1",
+                "value": "ECode1",
+                "description": "Enrollment Code Description 1"
+            },
+            {
+                "id": 2,
+                "name": "ECode2",
+                "label": "ECode2",
+                "value": "ECode2",
+                "description": "Enrollment Code Description 2"
+            }
+        ],
+        "state2": [
+            {
+                "id": 3,
+                "name": "ECode3",
+                "label": "ECode3",
+                "value": "ECode3",
+                "description": "Enrollment Code Description 3"
+            },
+            {
+                "id": 4,
+                "name": "ECode4",
+                "label": "ECode4",
+                "value": "ECode4",
+                "description": "Enrollment Code Description 4"
+            }
+        ],
+        "court1": [
+            {
+                "id": 5,
+                "name": "ECode5",
+                "label": "ECode5",
+                "value": "ECode5",
+                "description": "Enrollment Code Description 5"
+            },
+            {
+                "id": 6,
+                "name": "ECode6",
+                "label": "ECode6",
+                "value": "ECode6",
+                "description": "Enrollment Code Description 6"
+            }
+        ],
+        "court2": [
+            {
+                "id": 7,
+                "name": "ECode7",
+                "label": "ECode7",
+                "value": "ECode7",
+                
+                "description": "Enrollment Code Description 7"
+            },
+            {
+                "id": 8,
+                "name": "ECode8",
+                "label": "ECode8",
+                "value": "ECode8",
+                
+                "description": "Enrollment Code Description 8"
+            }
+        ],
+        "court3": [
+            {
+                "id": 9,
+                "name": "ECode9",
+                "label": "ECode9",
+                "value": "ECode9",
+                "description": "Enrollment Code Description 9"
+            },
+            {
+                "id": 10,
+                "name": "ECode10",
+                "label": "ECode10",
+                "value": "ECode10",
+                "description": "Enrollment Code Description 10"
+            }
+        ],
+        "court4": [
+            {
+                "id": 11,
+                "name": "ECode11",
+                "label": "ECode11",
+                "value": "ECode11",
+                "description": "Enrollment Code Description 11"
+            },
+            {
+                "id": 12,
+                "name": "ECode12",
+                "label": "ECode12",
+                "value": "ECode12",
+                "description": "Enrollment Code Description 12"
+            }
+        ],
+        "country1": [
+            {
+                "id": 13,
+                "name": "ECode13",
+                "label": "ECode13",
+                "value": "ECode13",
+                "description": "Enrollment Code Description 13"
+            },
+            {
+                "id": 14,
+                "name": "ECode14",
+                "label": "ECode14",
+                "value": "ECode14",
+                "description": "Enrollment Code Description 14"
+            }
+        ],
+        "country2": [
+            {
+                "id": 15,
+                "name": "ECode15",
+                "label": "ECode15",
+                "description": "Enrollment Code Description 15"
+            },
+            {
+                "id": 16,
+                "name": "ECode16",
+                "label": "ECode16",
+                "description": "Enrollment Code Description 16"
+            }
+        ],
+        "country3": [
+            {
+                "id": 17,
+                "name": "ECode17",
+                "label": "ECode17",
+                "description": "Enrollment Code Description 17"
+            },
+            {
+                "id": 18,
+                "name": "ECode18",
+                "label": "ECode18",
+                "description": "Enrollment Code Description 18"
+            }
+        ],
+        "country4": [
+            {
+                "id": 19,
+                "name": "ECode19",
+                "label": "ECode19",
+                "description": "Enrollment Code Description 19"
+            },
+            {
+                "id": 20,
+                "name": "ECode20",
+                "label": "ECode20",
+                "description": "Enrollment Code Description 20"
+            }
+        ]
+    }
+}
